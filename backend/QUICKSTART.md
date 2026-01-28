@@ -6,12 +6,18 @@
 - Node.js v14+ installed
 - MongoDB running locally OR MongoDB Atlas account
 
-### Step 1: Install Dependencies
+### Step 1: Navigate to Backend
+
+```bash
+cd backend
+```
+
+### Step 2: Install Dependencies
 ```bash
 npm install
 ```
 
-### Step 2: Configure Environment
+### Step 3: Configure Environment
 ```bash
 cp .env.example .env
 ```
@@ -24,12 +30,12 @@ MONGODB_URI=mongodb://localhost:27017/retail-order-management
 CORS_ORIGIN=http://localhost:3000
 ```
 
-### Step 3: Start the Server
+### Step 4: Start the Server
 ```bash
 npm run dev
 ```
 
-### Step 4: Test It Works
+### Step 5: Test It Works
 ```bash
 curl http://localhost:5000/health
 ```
@@ -49,14 +55,16 @@ curl http://localhost:5000/health
 
 ```
 Business-Operations-Dashboard/
-├── config/       → Database configuration
-├── models/       → Database schemas (Mongoose)
-├── controllers/  → Business logic
-├── routes/       → API endpoints
-├── middleware/   → Error handling & custom logic
-├── app.js        → Express setup
-├── server.js     → Server entry point
-└── .env          → Configuration variables
+├── backend/      → Backend Node.js app (YOU ARE HERE)
+│   ├── config/       → Database configuration
+│   ├── models/       → Database schemas (Mongoose)
+│   ├── controllers/  → Business logic
+│   ├── routes/       → API endpoints
+│   ├── middleware/   → Error handling & custom logic
+│   ├── app.js        → Express setup
+│   ├── server.js     → Server entry point
+│   └── .env          → Configuration variables
+└── frontend/     → React frontend app
 ```
 
 ---

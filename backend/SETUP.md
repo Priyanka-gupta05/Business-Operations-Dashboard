@@ -8,20 +8,24 @@ This is a Node.js backend for a Retail Order Management System built with Expres
 
 ```
 Business-Operations-Dashboard/
-├── config/
-│   └── db.js                 # MongoDB connection configuration
-├── models/                   # Mongoose schemas (to be developed)
-├── routes/                   # API route handlers (to be developed)
-├── controllers/              # Business logic (to be developed)
-├── middleware/
-│   └── errorHandler.js       # Global error handling middleware
-├── app.js                    # Express app initialization
-├── server.js                 # Server entry point
-├── package.json              # Project dependencies
-├── .env.example              # Environment variables template
-├── .gitignore                # Git ignore rules
-└── ReadMe                    # Project overview
+├── backend/                  # Backend folder (YOU ARE HERE)
+│   ├── config/
+│   │   └── db.js            # MongoDB connection configuration
+│   ├── models/              # Mongoose schemas (to be developed)
+│   ├── routes/              # API route handlers (to be developed)
+│   ├── controllers/         # Business logic (to be developed)
+│   ├── middleware/
+│   │   └── errorHandler.js  # Global error handling middleware
+│   ├── app.js               # Express app initialization
+│   ├── server.js            # Server entry point
+│   ├── package.json         # Project dependencies
+│   ├── .env.example         # Environment variables template
+│   └── ReadMe               # Project overview
+├── frontend/                # Frontend React app
+└── .gitignore               # Git ignore rules
 ```
+
+**Note**: Navigate to the `backend` folder before running commands.
 
 ## Prerequisites
 
@@ -31,7 +35,13 @@ Business-Operations-Dashboard/
 
 ## Setup Instructions
 
-### 1. Install Dependencies
+### 1. Navigate to Backend Folder
+
+```bash
+cd backend
+```
+
+### 2. Install Dependencies
 
 ```bash
 npm install
@@ -44,7 +54,7 @@ This will install:
 - **cors**: Cross-Origin Resource Sharing
 - **nodemon**: Development server auto-reload
 
-### 2. Configure Environment Variables
+### 3. Configure Environment Variables
 
 Copy the `.env.example` file to `.env`:
 

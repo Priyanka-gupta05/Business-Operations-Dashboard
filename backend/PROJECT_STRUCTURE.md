@@ -5,31 +5,36 @@
 ```
 Business-Operations-Dashboard/
 │
-├── 📁 config/
-│   └── db.js                          # MongoDB Mongoose connection
+├── 📁 backend/                         # Backend Node.js app (YOU ARE HERE)
+│   │
+│   ├── 📁 config/
+│   │   └── db.js                       # MongoDB Mongoose connection
+│   │
+│   ├── 📁 models/
+│   │   └── Example.js                  # Template model (replace with actual models)
+│   │
+│   ├── 📁 routes/
+│   │   └── exampleRoutes.js            # Template routes (replace with actual routes)
+│   │
+│   ├── 📁 controllers/
+│   │   └── exampleController.js        # Template controller (replace with actual controllers)
+│   │
+│   ├── 📁 middleware/
+│   │   └── errorHandler.js             # Global error & 404 handling
+│   │
+│   ├── 📁 docs/
+│   │   └── requirements.md             # Project requirements
+│   │
+│   ├── 📄 app.js                       # Express app initialization & setup
+│   ├── 📄 server.js                    # Server entry point
+│   ├── 📄 package.json                 # Project dependencies & scripts
+│   ├── 📄 .env.example                 # Environment variables template
+│   ├── 📄 SETUP.md                     # Complete setup guide
+│   └── 📄 ReadMe                       # Project overview
 │
-├── 📁 models/
-│   └── Example.js                     # Template model (replace with actual models)
+├── 📁 frontend/                        # React frontend app
 │
-├── 📁 routes/
-│   └── exampleRoutes.js               # Template routes (replace with actual routes)
-│
-├── 📁 controllers/
-│   └── exampleController.js           # Template controller (replace with actual controllers)
-│
-├── 📁 middleware/
-│   └── errorHandler.js                # Global error & 404 handling
-│
-├── 📁 docs/
-│   └── requirements.md                # Project requirements
-│
-├── 📄 app.js                          # Express app initialization & setup
-├── 📄 server.js                       # Server entry point
-├── 📄 package.json                    # Project dependencies & scripts
-├── 📄 .env.example                    # Environment variables template
-├── 📄 .gitignore                      # Git ignore rules
-├── 📄 SETUP.md                        # Complete setup guide
-└── 📄 ReadMe                          # Project overview
+└── 📄 .gitignore                       # Git ignore rules
 ```
 
 ## File Descriptions
