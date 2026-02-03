@@ -2,6 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import connectDB from './config/db.js';
 import { errorHandler, notFoundHandler } from './middleware/errorHandler.js';
+import productRoutes from './src/routes/product.routes.js';
 
 /**
  * Initialize and configure Express application
@@ -39,11 +40,13 @@ app.get('/health', (req, res) => {
 
 /**
  * API Routes
- * Routes will be added here as features are developed
  */
+// Product Management Routes
+app.use('/api/products', productRoutes);
+
+// Future routes:
 // Example: app.use('/api/orders', ordersRouter);
 // Example: app.use('/api/customers', customersRouter);
-// Example: app.use('/api/products', productsRouter);
 
 /**
  * Error Handling Middleware
