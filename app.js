@@ -3,6 +3,7 @@ import cors from 'cors';
 import connectDB from './config/db.js';
 import { errorHandler, notFoundHandler } from './middleware/errorHandler.js';
 import productRoutes from './src/routes/product.routes.js';
+import orderRoutes from './src/routes/order.routes.js';
 
 /**
  * Initialize and configure Express application
@@ -44,8 +45,10 @@ app.get('/health', (req, res) => {
 // Product Management Routes
 app.use('/api/products', productRoutes);
 
+// Order Management Routes
+app.use('/api/orders', orderRoutes);
+
 // Future routes:
-// Example: app.use('/api/orders', ordersRouter);
 // Example: app.use('/api/customers', customersRouter);
 
 /**
